@@ -98,16 +98,63 @@
 
 // alert('あなたの選んだ手は' + user_hand + 'です。');
 
-function getJShand(){
-  let js_hand_num = Math.floor( Math.random() * 3 );
+// function getJShand(){
+//   let js_hand_num = Math.floor( Math.random() * 3 );
 
-  if(js_hand_num == 0){
-    js_hand = "グー";
-  } else if(js_hand_num == 1){
-    js_hand = "チョキ";
-  } else if(js_hand_num == 2){
-    js_hand = "パー";
-  }
+//   if(js_hand_num == 0){
+//     js_hand = "グー";
+//   } else if(js_hand_num == 1){
+//     js_hand = "チョキ";
+//   } else if(js_hand_num == 2){
+//     js_hand = "パー";
+//   }
 
-  return js_hand;
+//   return js_hand;
+// }
+
+
+// let a = 40
+// let b = 10
+// let temp = 0
+
+// temp = a 
+
+// a = b
+
+// b = temp
+
+// temp = 0
+
+
+// console.log(a, b)
+
+
+// let a = !false
+// console.log(a)
+
+let patient = {
+  name : "kim",
+  age : 28,
+  disease : "cold"
 }
+
+console.log(patient)
+console.log(patient.name)
+
+
+patient.name = "jk"
+console.log(patient.name)
+
+
+let patientList = [
+  {name : "kim", age : 13},
+  {name : "kim1", age : 14},
+  {name : "kim2", age : 15}
+]
+
+console.log(patientList)
+
+console.log("첫번째환자는 :", patientList[0])
+console.log("첫번째환자의 나이는 :", patientList[0]["age"])
+
+console.log("두번째 환자의 이름은:", patientList[1].name)
