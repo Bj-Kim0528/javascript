@@ -132,29 +132,64 @@
 // let a = !false
 // console.log(a)
 
-let patient = {
-  name : "kim",
-  age : 28,
-  disease : "cold"
+// let patient = {
+//   name : "kim",
+//   age : 28,
+//   disease : "cold"
+// }
+
+// console.log(patient)
+// console.log(patient.name)
+
+
+// patient.name = "jk"
+// console.log(patient.name)
+
+
+// let patientList = [
+//   {name : "kim", age : 13},
+//   {name : "kim1", age : 14},
+//   {name : "kim2", age : 15}
+// ]
+
+// console.log(patientList)
+
+// console.log("첫번째환자는 :", patientList[0])
+// console.log("첫번째환자의 나이는 :", patientList[0]["age"])
+
+// console.log("두번째 환자의 이름은:", patientList[1].name)
+
+// let menu = 2
+
+// switch (menu){
+//   case 1 :
+//     console.log("물건사기")
+//     break;
+//   case 2 :
+//     console.log("잔고확인") 
+//     break;
+//   case 3 :
+//     console.log("히스토리확인")
+//     break;
+//   default :
+//     console.log("홈으로가기")
+// }
+
+// //i=i+1 이 i++
+// for(let i =1;i<11;i++){
+//   console.log("눈나!",i)
+// }
+
+// for(let i =1;i<11;i++){
+//   if (i%2==0){
+//     console.log("눈나!",i)
+//   }
+// }
+
+for(let i = 2; i<=9; i++){
+  console.log(i,'단')
+  for(let j= 1; j<=9; j++){
+    console.log(i,'*',j,'=',i*j)
+  }
 }
 
-console.log(patient)
-console.log(patient.name)
-
-
-patient.name = "jk"
-console.log(patient.name)
-
-
-let patientList = [
-  {name : "kim", age : 13},
-  {name : "kim1", age : 14},
-  {name : "kim2", age : 15}
-]
-
-console.log(patientList)
-
-console.log("첫번째환자는 :", patientList[0])
-console.log("첫번째환자의 나이는 :", patientList[0]["age"])
-
-console.log("두번째 환자의 이름은:", patientList[1].name)
