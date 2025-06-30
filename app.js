@@ -186,10 +186,66 @@
 //   }
 // }
 
-for(let i = 2; i<=9; i++){
-  console.log(i,'단')
-  for(let j= 1; j<=9; j++){
-    console.log(i,'*',j,'=',i*j)
-  }
-}
+// for(let i = 2; i<=9; i++){
+//   console.log(i,'단')
+//   for(let j= 1; j<=9; j++){
+//     console.log(i,'*',j,'=',i*j)
+//   }
+// }
 
+
+// let i =2
+// while(i<10){
+//   console.log("실행",i)
+//   i++;
+// }
+
+// let fruit = ["ba","na","na"]
+// //length는 배열의 갯수(위의 배열은 3개이므로 3)
+// for(let i = 0;i<fruit.length;i++){
+//   console.log(fruit[i])
+// }
+
+// let fruit=["ba","na","na","good"]
+
+// for(let i=0;i<fruit.length;i++){
+//   console.log("나는",fruit[i])
+// }
+//for ... of 세부조절은 안되나 순회형 자료의것을 꺼내오기 쉬움
+// let sentense = "나는 코딩이 너무 좋아"
+// for(let item of fruit){
+//   console.log("나는 of",item)
+// }
+// for(let char of sentense){
+//   console.log("char",char) 
+// }
+
+
+// // for ... in 객체의 키값이있나 없나 확인할때 사용가능
+// let person={
+//   name: "나",
+//   age:25,
+//   // cute:false
+// }
+// // for(let key in person){
+// //   console.log("key",key)
+// //   if(key==="cute"){
+// //     console.log("누나는?",person[key])
+// //   }
+// // }
+// for(let key in fruit){
+//   console.log("key",key)
+// }
+
+for(let i=1; i<51; i++){
+  let strValue = i.toString() // 문자열로바꿈
+  let result = ""
+
+  for(let j=0; j<strValue.length; j++){
+    if(strValue[j]==="3" || strValue[j]==="6" || strValue[j]==="9"){
+      result = result+"짝"
+    }
+  }
+
+  console.log(result.length>0?result:i)
+}
