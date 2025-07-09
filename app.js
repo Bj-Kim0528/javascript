@@ -237,15 +237,83 @@
 //   console.log("key",key)
 // }
 
-for(let i=1; i<51; i++){
-  let strValue = i.toString() // 문자열로바꿈
-  let result = ""
+// for(let i=1; i<51; i++){
+//   let strValue = i.toString() // 문자열로바꿈
+//   let result = ""
 
-  for(let j=0; j<strValue.length; j++){
-    if(strValue[j]==="3" || strValue[j]==="6" || strValue[j]==="9"){
-      result = result+"짝"
-    }
+//   for(let j=0; j<strValue.length; j++){
+//     if(strValue[j]==="3" || strValue[j]==="6" || strValue[j]==="9"){
+//       result = result+"짝"
+//     }
+//   }
+
+//   console.log(result.length>0?result:i)
+// }
+
+// function 함수이름(매개변수) {
+//   // 내용 입력
+//   return 반환값;
+// }
+
+
+// function greet(firstName, lastName){
+//   console.log("안녕 내이름은",firstName,lastName,"이야")
+// }
+
+// greet("김", "병준")
+
+
+// function meetAt(year, month, day){
+//   if(year&&month&&day){
+//     return console.log(`${year}/${month}/${day}`)
+//   }
+//   else if(year&&month){
+//     return console.log(`${year}년 ${month}월`)
+//   }
+//   else if (year){
+//     return console.log(`${year}년`)
+//   }
+// }
+
+// function findSmallestElement(arr){
+//   arr.forEach(item=>{
+//     console.log(item);
+//   });
+// }
+
+// const items = ['s','p','k']
+// findSmallestElement(items)
+
+// function findSmallestElement(arr){
+//   if (arr.length == 0){
+//     return console.log("빈 배열은 처리하수없습니다")
+//   }
+
+//   let min = arr[0];
+
+//   for (let i = 1; i<arr.length; i++){
+//     if (arr[i] < min){
+//       min = arr[i];
+//     }
+//   }
+//   return min;
+
+// }
+// const items = [4,1,2]
+// console.log(findSmallestElement(items));
+
+function integerDivide(dividend) {
+  let quotient = 0;
+  let remainder = dividend;
+
+  // 나머지가 divisor 이상인 동안 뺄셈 반복
+  while (remainder >= 50000) {
+    remainder -= 50000;
+    quotient++;
   }
 
-  console.log(result.length>0?result:i)
+  return quotient;
+  
 }
+
+console.log(integerDivide(12300));
