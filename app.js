@@ -286,7 +286,7 @@
 
 // function findSmallestElement(arr){
 //   if (arr.length == 0){
-//     return console.log("빈 배열은 처리하수없습니다")
+//     return 0
 //   }
 
 //   let min = arr[0];
@@ -303,17 +303,58 @@
 // console.log(findSmallestElement(items));
 
 function integerDivide(dividend) {
-  let quotient = 0;
+  let quotient1 = 0;
+  
   let remainder = dividend;
 
   // 나머지가 divisor 이상인 동안 뺄셈 반복
   while (remainder >= 50000) {
     remainder -= 50000;
-    quotient++;
+    quotient1++;
   }
 
-  return quotient;
+
+  let quotient2 = 0;
+
+  while (remainder >= 10000) {
+    remainder -= 10000;
+    quotient2++;
+  }
+
+  let quotient3 = 0;
+
+  while (remainder >= 5000) {
+    remainder -= 5000;
+    quotient3++;
+  }
+
+  let quotient4 = 0;
+
+  while (remainder >= 1000) {
+    remainder -= 1000;
+    quotient4++;
+  }
+
+  let quotient5 = 0;
+
+  while (remainder >= 500) {
+    remainder -= 500;
+    quotient5++;
+  }
+
+  let quotient6 = 0;
+
+  while (remainder >= 100) {
+    remainder -= 100;
+    quotient6++;
+  }
   
+  console.log(`50000 x ${quotient1}`);
+  console.log(`10000 x ${quotient2}`);
+  console.log(`5000  x ${quotient3}`);
+  console.log(`1000  x ${quotient4}`);
+  console.log(`500 x ${quotient5}`);
+  console.log(`100  x ${quotient6}`);
 }
 
-console.log(integerDivide(12300));
+integerDivide(1800);
